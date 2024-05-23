@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Портфолио</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css">
+
+    <link rel="icon" type="image/x-icon" href="images/favicons/favicon.svg">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon.png">
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__row">
+          <img src="./images/photo.jpg" srcset="./images/photo@2x.jpg 2x" alt="фото" class="header__img"/>
+
+          <div class="header__desc">
+            <h1 class="header__title">Сергей Гришан</h1>
+            <p class="header__text">
+              фрилансер, веб-разработчик,<br />создание сайтов
+            </p>
+
+            <div class="header__btns">
+              <a href="#portfolio" class="btn">Портфолио</a>
+              <a href="#contacts" class="btn-outline">Контакты</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <video class="header__video" autoplay muted loop>
+        <source type="video/mp4" src="video/1.mp4">
+      </video>
+
+    </header>
+
+    <main>
+      <!-- portfolio -->
+
+      <section class="portfolio" id="portfolio">
+        <div class="container">
+          <h2 class="portfolio__title">Портфолио</h2>
+
+          <div class="projects">
+
+            <article class="project">
+            <a href="panto.html">
+              <img src="./images/portfolio/project-01.jpg" srcset="./images/portfolio/project-01@2x.jpg 2x" alt="Сайт магазина мебели" class="project__img">
+            </a>
+              <h3 class="project__title"><a href="panto.html">Сайт магазина мебели</a></h3>
+            </article>
+
+            <article class="project">
+              <a href="travel.html">
+                <img src="./images/portfolio/project-02.jpg" srcset="./images/portfolio/project-02@2x.jpg 2x" alt="Сайт туристического агентства" class="project__img">
+              </a>
+                <h3 class="project__title"><a href="travel.html">Сайт туристического агентства</a></h3>
+              </article>
+
+              <article class="project">
+                <a href="lofthouse.html">
+                  <img src="./images/portfolio/project-03.jpg" srcset="./images/portfolio/project-03@2x.jpg 2x" alt="Сайт жилого комплекса" class="project__img">
+                </a>
+                  <h3 class="project__title"><a href="lofthouse.html">Сайт жилого комплекса</a></h3>
+                </article>
+            
+          </div>
+
+        </div>
+      </section>
+      <!-- portfolio end -->
+
+      <!-- contacts -->
+
+      <section class="contacts" id="contacts">
+        <div class="container">
+          <h2 class="contacts__title">Контакты</h2>
+
+          <div class="messengers">
+            <a href="https://t.me/youraccountname" target="_blank" class="messenger">
+              <img src="./images/icons/telegram.svg" alt="Написать в Telegram">
+              Написать в Telegram</a>
+            <a href="https://wa.me/79051234567" target="_blank" class="messenger">
+              <img src="./images/icons/whatsapp.svg" alt="Отправить в WhatsApp">
+              Отправить в WhatsApp</a>
+            <a href="https://vk.me/youraccountname" target="_blank" class="messenger">
+              <img src="./images/icons/vk.svg" alt="Связаться Вконтакте">
+              Связаться Вконтакте</a>
+          </div>
+        </div>
+      </section>
+      <!-- contacts END -->
+    </main>
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <p>вёрстка&nbsp; Сергей Гришан</p>
+
+          <p><a href="https://github.com/sobakastar" target="_blank">sobakastar&nbsp; </a>| свёрстано по  макету&nbsp; <span>ВебКадеми</span></p>
+        </div>
+      </div>
+    </footer>
+    <!-- FOOTER -->
+  </body>
+</html>

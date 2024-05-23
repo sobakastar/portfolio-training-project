@@ -1,0 +1,302 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --font-family: "Montserrat", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* ----- HEADER ----- */
+
+.header {
+  position: relative;
+
+  background: #252525 linear-gradient(158deg, #2f2f2f 0%, #202020 100%);
+  color: #fff;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  border-bottom-right-radius: 100px;
+
+  overflow: hidden;
+}
+
+.header .container {
+  position: relative;
+  z-index: 3;
+}
+
+.header__video {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+
+  opacity: .5;
+  border-bottom-right-radius: 100px;
+}
+.header__img {
+  border-radius: 80px;
+}
+
+.header__row {
+  display: flex;
+  align-items: center;
+  column-gap: 61px;
+}
+
+.header__desc {
+}
+.header__title {
+  font-weight: 700;
+  font-size: 60px;
+  margin-bottom: 10px;
+}
+.header__text {
+  font-weight: 300;
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+.header__btns {
+  display: flex;
+  column-gap: 20px;
+}
+.btn {
+  height: 48px;
+  border-radius: 8px;
+  padding: 15px 25px;
+  background-color: #000;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  color: #fff;
+
+  transition: all 0.2s ease-in;
+
+  &:hover {
+    background-color: #1782cf;
+  }
+}
+.btn-outline {
+  height: 48px;
+  border-radius: 8px;
+  padding: 15px 25px;
+  border: 1px solid #3b3b3b;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  color: #fff;
+
+  transition: all 0.2s ease-in;
+
+  &:hover {
+    border-color: #1782cf;
+  }
+}
+/* ----- HEADER end ----- */
+
+/* ----- PORTFOLIO ----- */
+
+.portfolio {
+  padding: 80px 0;
+}
+
+.portfolio__title {
+  font-weight: 700;
+  font-size: 52px;
+  text-align: center;
+  color: #000;
+  margin-bottom: 65px;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 80px;
+}
+.project {
+  text-align: center;
+}
+.project__img {
+  border-radius: 30px;
+  margin-bottom: 30px;
+  transition: opacity 0.2s ease-in;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+.project__title {
+  font-size: 22px;
+  text-decoration-skip-ink: none;
+  text-align: center;
+}
+.project__title a {
+  color: #000;
+  text-decoration: underline;
+}
+/* ----- PORTFOLIO end ----- */
+
+/* ------- CONTACTS ------- */
+
+.contacts {
+  background-color: #252525;
+  border-top-left-radius: 100px;
+  padding: 80px 0;
+  color: #fff;
+}
+
+.contacts__title {
+  font-weight: 700;
+  font-size: 52px;
+  text-align: center;
+
+  margin-bottom: 65px;
+}
+.messengers {
+  display: flex;
+  column-gap: 30px;
+  row-gap: 30px;
+  flex-wrap: wrap;
+}
+.messenger {
+  flex-grow: 1;
+
+  display: flex;
+  column-gap: 15px;
+  align-items: center;
+
+  border-radius: 20px;
+  border: 1px solid #363636;
+  padding: 46px 20px;
+
+  font-size: 20px;
+  color: #fff;
+
+  transition: background-color 0.2s ease-in-out;
+
+  &:hover {
+    background-color: #1e1e1e;
+  }
+}
+/* ------- CONTACTS end ------- */
+
+/* FOOTER */
+
+.footer {
+  padding: 30px 0;
+  background-color: #1e1e1e;
+}
+
+.footer__inner {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.footer__inner p {
+  font-size: 14px;
+  color: #5D5D5D;
+}
+.footer__inner p + p {
+  margin-top: 18px;
+}
+.footer__inner a {
+  font-size: 16px;
+  color: #c0b411;
+}
+.footer__inner p span {
+  font-size: 14px;
+  color: #5886A8;
+}
+/* FOOTER */
+
+/* ----- INNER PAGE - Panto -----  */
+
+.inner__page {
+  padding: 80px 0 40px;
+}
+
+.inner__page-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  row-gap: 25px;
+  margin-bottom: 40px;
+}
+.inner__page-title {
+  font-size: 52px;
+  font-weight: 700;
+}
+.inner__page-text {
+  max-width: 570px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+
+  font-size: 16px;
+  line-height: 1.5;
+  color: #555;
+}
+
+.inner__page-link {
+  font-size: 16px;
+  color: #000;
+
+    a {
+    color: #000;
+    text-decoration: underline;
+  }
+}
+
+.inner__page-img {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+.inner__page-backlink {
+  max-width: 770px;
+  margin: 0 auto;
+  padding: 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 10px;
+
+  background-color: #F1F1F1;
+
+  text-align: center;
+  color: #000;
+
+  transition: all .2s ease-in;
+
+  &:hover {
+    background-color: #dedede;
+  }
+}
+/* ----- INNER PAGE - Panto end ----- */
